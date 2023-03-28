@@ -2,10 +2,14 @@
 
 /**
  * rev_string - reverses a string
- * @s: string to be reversed
+ * @s: string to be modified
+ * Return: void
  */
+
 void rev_string(char *s)
+
 {
+
 	int len = 0, index = 0;
 	char tmp;
 
@@ -16,6 +20,6 @@ void rev_string(char *s)
 	{
 	tmp = s[index];
 	s[index] = s[len - index - 1];
-	s[lem - index - 1] = tmp;
+	s[len - index - 1] = tmp;
 	}
 }
